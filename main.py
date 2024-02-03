@@ -2,7 +2,6 @@
 
 import requests
 import random
-import wikipedia
 import re
 import logging
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
@@ -75,7 +74,6 @@ def main() -> None:
 	format = '%(asctime)s %(levelname)s: %(message)s'
 	logging.basicConfig(filename='applog.log', level=logging.INFO, format=format)
 	# Token from BotFather
-	# Put your token here
 	token = ''
 	# Create Updater
 	updater = Updater(token)
